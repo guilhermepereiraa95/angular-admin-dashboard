@@ -5,7 +5,7 @@
       [opened]="(isHandset$ | async) === false">
     <mat-toolbar>Menu</mat-toolbar>
     <mat-nav-list>
-      <a mat-list-item href="#">Calculadora de binários</a>
+      <a mat-list-item href="#">Dashboard</a>
      
     </mat-nav-list>
   </mat-sidenav>
@@ -19,8 +19,9 @@
         *ngIf="isHandset$ | async">
         <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
       </button>
-      <span>Dashboard</span>
+      <span>Admin</span>
     </mat-toolbar>
+    <ng-content></ng-content>
   </mat-sidenav-content>
 </mat-sidenav-container>
 
